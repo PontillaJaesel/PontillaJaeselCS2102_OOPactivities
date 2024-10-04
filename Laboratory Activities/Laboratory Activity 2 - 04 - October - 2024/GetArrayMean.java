@@ -21,7 +21,7 @@ public class GetArrayMean {
             numbers[i] = scanner.nextInt();
         }
 
-        double mean = getArrayMean(numbers);
+        float mean = getArrayMean(numbers);
         System.out.printf("Mean of array is: %.2f%n", mean);
     }
 }
