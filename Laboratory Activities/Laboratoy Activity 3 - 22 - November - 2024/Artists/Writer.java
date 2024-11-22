@@ -9,8 +9,8 @@ enum WritingStyle{
 public class Writer extends Artist {
     private WritingStyle writing_style;
 
-    public Writer(String name, String nationality, int age, String specialty, WritingStyle writingstyle) {
-        super(name, nationality, age, specialty);
+    public Writer(String name, int age, String specialty, WritingStyle writingstyle) {
+        super(name, age, specialty);
         this.writing_style = writingstyle;
     }
 
