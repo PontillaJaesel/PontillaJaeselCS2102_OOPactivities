@@ -1,31 +1,31 @@
-enum Genre {
-    POP,
-    ROCK,
-    CLASSICAL,
+enum DanceStyle {
+    BALLET,
+    HIPHOP,
     JAZZ,
-    HIPHOP
+    CONTEMPORARY
 }
 
-public class Singer extends Artist {
-    private Genre genre;
+public class Dancer extends Artist {
+    private DanceStyle dance_style;
 
-    public Singer(String name, int age, String specialty, Genre genre) {
+    public Dancer(String name, int age, String specialty, DanceStyle dancestyle) {
         super(name, age, specialty);
-        this.genre = genre;
+        this.dance_style = dancestyle;
     }
 
-    public Genre getGenre() {
-        return genre;
+    public DanceStyle getDanceStyle() {
+        return dance_style;
     }
 
-    public void setGenre(Genre genre) {
-        this.genre = genre;
+    public void setDanceStyle(DanceStyle dancestyle) {
+        this.dance_style = dancestyle;
     }
 
     @Override
     public void displayInfo() {
-        System.out.println("Singer Info: ");
+        System.out.println("Dancer Info: ");
         super.displayInfo();
-        System.out.println("Genre: " + genre);
+        System.out.println("Dancer: " + dance_style);
     }
+    
 }
