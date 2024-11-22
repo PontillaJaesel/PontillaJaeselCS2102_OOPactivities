@@ -9,8 +9,8 @@ enum Genre {
 public class Singer extends Artist {
     private Genre genre;
 
-    public Singer(String name, String nationality, int age, String specialty, Genre genre) {
-        super(name, nationality, age, specialty);
+    public Singer(String name, int age, String specialty, Genre genre) {
+        super(name, age, specialty);
         this.genre = genre;
     }
 
