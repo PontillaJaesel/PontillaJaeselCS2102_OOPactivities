@@ -6,26 +6,26 @@ enum DanceStyle {
 }
 
 public class Dancer extends Artist {
-    private DanceStyle dance_style;
+    private DanceStyle dancestyle;
 
     public Dancer(String name, String nationality, int age, String specialty, DanceStyle dancestyle) {
         super(name, nationality, age, specialty);
-        this.dance_style = dancestyle;
+        this.dancestyle = dancestyle;
     }
 
     public DanceStyle getDanceStyle() {
-        return dance_style;
+        return dancestyle;
     }
 
     public void setDanceStyle(DanceStyle dancestyle) {
-        this.dance_style = dancestyle;
+        this.dancestyle = dancestyle;
     }
 
     @Override
     public void displayInfo() {
         System.out.println("== Dancer Info ==");
         super.displayInfo();
-        System.out.println("Dancer: " + dance_style);
+        System.out.println("Dancer: " + dancestyle);
     }
     
 }
