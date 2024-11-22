@@ -1,6 +1,5 @@
 public class ArtistDemo {
     public static void main(String[] args) {
-        // instance of Artist
         Artist artist = new Artist("Charlie Puth", 32, "Music");
         artist.displayInfo();
 
