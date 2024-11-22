@@ -1,6 +1,5 @@
 public class Artist {
     
-    //member variables
     private String name;
     private int age;
     private String specialty;
@@ -11,7 +10,6 @@ public class Artist {
         this.specialty = specialty;
     }
 
-   // accessors
     public String getName() {
         return name;
     }
@@ -24,7 +22,6 @@ public class Artist {
         return specialty;
     }
 
- //mutators
     public void setName(String name) {
         this.name = name;
     }
@@ -37,7 +34,6 @@ public class Artist {
         this.specialty = specialty;
     }
 
-// display method
     public void displayInfo() {
         System.out.println("Artist Name: " + name);
         System.out.println("Age: " + age);
