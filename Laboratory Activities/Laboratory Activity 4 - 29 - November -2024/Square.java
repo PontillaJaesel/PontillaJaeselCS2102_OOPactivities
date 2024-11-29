@@ -1,17 +1,22 @@
-public class ShapeCollection {
-    private Shape[] shapes;
+public class Square implements Shape{
+    private double side;
 
-    public ShapeCollection(Shape[] shapes) {
-        this.shapes = shapes;
+    public Square(double side) {
+        this.side = side;
     }
 
-    public void getPropertyValues() {
-        for (Shape shape : shapes) {
-            shape.printShapeType();
-            System.out.printf("Area: %.2f\n", shape.getArea());
-            System.out.printf("Perimeter: %.2f\n", shape.getPerimeter());
-            System.out.println();
-        }
+    @Override
+    public double getArea() {
+        double area = side * side;
+        return area;
+    }
+
+    public double getPerimeter() {
+        double perimeter = 4 * side;
+        return perimeter;
+    }
+
+    public void printShapeType() {
+        System.out.println("Square");
     }
 }
-
